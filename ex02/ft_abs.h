@@ -6,13 +6,13 @@
 /*   By: adubeau <marvin@42quebec.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/03 11:42:46 by adubeau           #+#    #+#             */
-/*   Updated: 2021/03/04 08:24:25 by adubeau          ###   ########.fr       */
+/*   Updated: 2021/03/04 10:34:48 by adubeau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_ABS_H
 # define FT_ABS_H
 
-# define ABS(value) ((Value > 0) ? Value : -Value)
+# define ABS(Value) ((Value > 0) ? Value : -Value)
 
 #endif

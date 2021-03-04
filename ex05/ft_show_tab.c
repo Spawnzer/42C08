@@ -6,7 +6,7 @@
 /*   By: adubeau <marvin@42quebec.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/04 08:38:21 by adubeau           #+#    #+#             */
-/*   Updated: 2021/03/04 08:46:40 by adubeau          ###   ########.fr       */
+/*   Updated: 2021/03/04 11:07:37 by adubeau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,24 +20,24 @@ void	ft_putchar(char c)
 
 void	ft_putnbr(int nb)
 {
-	if (nb == -2147483648)
-	{
-		write(1, "-2147483648", 11);
-		return ;
-	}
-	if (nb < 0)
+	long n;
+
+	n = nb;
+	if (n < 0)
 	{
 		ft_putchar('-');
-		ft_putnbr(-nb);
+		n *= -1;
 		return ;
 	}
-	if (nb < 10)
-		ft_putchar(nb + 48);
-	else
+	if (n < 10)
+		ft_putchar(n + 48);
+	else if (n >= 10)
 	{
-		ft_putnbr(nb / 10);
-		ft_putchar(nb % 10 + 48);
+		ft_putnbr(n / 10);
+		ft_putnbr(n % 10);
 	}
+	else
+		ft_putchar(n + 48);
 }
 
 void	ft_putstr(char *str)
