@@ -6,7 +6,7 @@
 /*   By: adubeau <marvin@42quebec.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/03 14:56:35 by adubeau           #+#    #+#             */
-/*   Updated: 2021/03/04 10:58:26 by adubeau          ###   ########.fr       */
+/*   Updated: 2021/03/04 13:44:00 by adubeau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,7 @@ struct	s_stock_str	*ft_strs_to_tab(int ac, char **av)
 	t_stock_str	*str;
 
 	i = 0;
-	str = (malloc(sizeof(t_stock_str) * (ac + 1)));
+	str = (t_stock_str *)malloc(sizeof(t_stock_str) * (ac + 1));
 	if (!str)
 		return (NULL);
 	while (i < ac)
