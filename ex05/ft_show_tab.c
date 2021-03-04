@@ -6,7 +6,7 @@
 /*   By: adubeau <marvin@42quebec.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/04 08:38:21 by adubeau           #+#    #+#             */
-/*   Updated: 2021/03/04 11:07:37 by adubeau          ###   ########.fr       */
+/*   Updated: 2021/03/04 11:53:39 by adubeau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,5 +65,6 @@ void	ft_show_tab(struct s_stock_str *par)
 		ft_putchar(10);
 		ft_putstr(par[i].copy);
 		ft_putchar(10);
+		i++;
 	}
 }
